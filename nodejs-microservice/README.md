@@ -10,10 +10,24 @@ bash bash.sh -i
 
 ## Step 2
 
-The commands to create the server are:
+The commands to create dependecies server are:
 
 ```
 bash bash.sh -d
+```
+
+## Step 3
+
+If you want to deploy the application, you must copy and run the next command in the ubuntu terminal:
+
+```
+bash bash.sh run
+```
+
+But, if you want to develop the application, you mush copy and run the next command:
+
+```
+bash bash.sh dev
 ```
 
 # Referencias

@@ -24,9 +24,17 @@ install () {
     # sudo apt install npm
 }
 
-dependencies() {
+dependencies () {
     sudo npm install -S express ejs
     sudo npm install -S path multer morgan nodemon
+}
+
+develop () {
+    npm run dev
+}
+
+deploy () {
+    npm start
 }
 
 main () {
@@ -39,6 +47,12 @@ main () {
         elif [[ $arg == -d ]];
         then
             dependencies
+        elif [[ $arg == dev ]];
+        then
+            develop
+        elif [[ $arg == run ]];
+        then
+            deploy
         else
             echo -e "\e[41mEl comando: $arg no existe. \e[0m"
             break
