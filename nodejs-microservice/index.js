@@ -14,6 +14,9 @@ app.set('views', path.join(__dirname + '/src/views'))
 app.engine('html', require('ejs').renderFile)
 app.set('view engine', 'ejs');
 
+// Render CSS
+app.use(express.static(path.join(__dirname, 'src')))
+
 // Use router
 app.use(routes);  
 app.use(express.json());

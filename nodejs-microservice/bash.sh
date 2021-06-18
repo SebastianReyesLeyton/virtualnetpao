@@ -14,14 +14,14 @@ countArguments () {
 
 install () {
     echo -e "\e[36mPreparando el sistema\e[0m"
-    # sudo apt update
+    sudo apt update
 
     echo -e "\e[92mInstalling NodeJS \e[0m"
-    # sudo apt install nodejs
+    sudo apt install nodejs
     nodejs -v
 
     echo -e "\e[32mInstalling npm \e[0m"
-    # sudo apt install npm
+    sudo apt install npm
 }
 
 dependencies () {
